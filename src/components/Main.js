@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart, emptyFromCart } from "../redux/actions";
 import { productList } from "../redux/productAction";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 function Main() {
     const dispatch = useDispatch();
@@ -9,40 +10,24 @@ function Main() {
     let data = useSelector((state) => state.productData);
     console.log("data---", data);
 
-    const product = {
-        name: "Thilina",
-        age: 34,
-        city: "Katunayake",
-    };
+    useEffect(()=>{
+        dispatch(productList())
+    },[]);
 
     return (
         <div className="App">
-            <button onClick={() => dispatch(addToCart(product))}>
-                Add to Cart
-            </button>
-            <div>
-                <button onClick={() => dispatch(removeFromCart(product))}>
-                    Remove from Cart
-                </button>
-            </div>
-            <div>
-                <button onClick={() => dispatch(emptyFromCart())}>
-                    Empty Cart
-                </button>
-            </div>
-            <div>
-                <button onClick={() => dispatch(productList())}>
-                    Call Product List
-                </button>
-            </div>
-            <div className="product-container">
-                
-                {data.map((item) =><div className="product-item">
-                    {item.name}
+         <div className="product-container">
+             {data.map((item) =>
+                <div className="product-item">
                         <div>
                         <img src={item.image}/>
                         </div>
-                    </div>)}
+                        <div>Name : {item.name}</div> 
+                        <div>Price : {item.price}</div>
+                        <button onClick={() => dispatch(addToCart(item))}>ADD TO CART</button>
+                        <button onClick={() => dispatch(removeFromCart(item.id))}>REMOVE FROM CART</button>
+                        <button onClick={() => dispatch(emptyFromCart())}>EMPTY CART</button>
+                </div>)}
             </div>
         </div>
     );
