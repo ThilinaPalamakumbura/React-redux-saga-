@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { MdAddShoppingCart } from "react-icons/md";
 
 export const Header = () => {
   const result = useSelector((state) => state);
@@ -9,11 +10,7 @@ export const Header = () => {
     <div className="header">
       <div className="cart-div">
         <span>{result.cartData.length}</span>
-        <img
-          src=""
-          alt="CartImage"
-          height="80px"
-        />
+        <MdAddShoppingCart size={50} />
       </div>
     </div>
   );
