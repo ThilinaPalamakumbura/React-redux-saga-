@@ -6,15 +6,16 @@ export const cartData = (data = [], action) => {
   var myArray = [];
   switch (action.type) {
     case ADD_TO_CART:
-      console.warn("ADD_TO_CART CART CONDITION --", action.data);
+      console.log("ADD_TO_CART CART CONDITION --", action);
       return [action.data, ...data];
     case REMOVE_FROM_CART:
-      console.warn("REMOVE_FROM_CART CONDITION --", action.data);
-      
-      myArray = data.length ? data.slice(0, data.length - 1) : [];
+      console.warn("REMOVE_FROM_CART CONDITION --", action);
+
+      myArray = data.filter((item) => item.id !== action.data);
+
       return [...myArray];
     case EMPTY_CART:
-      console.warn("EMPTY_CART CONDITION --", action.data);
+      console.log("EMPTY_CART CONDITION --", action.data);
       return [];
     default:
       return data;

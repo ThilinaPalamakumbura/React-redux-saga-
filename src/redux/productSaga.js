@@ -7,10 +7,8 @@ function* productSaga() {
 }
 
 function* getProductList() {
-    let data = yield fetch("http://localhost:3505/productList");
-    data = yield data.json();
-    yield put({type:SET_PRODUCT_LIST,data})
-
-
+    let data1 = yield fetch("http://localhost:3505/productList");
+    data1 = yield data1.json();
+    yield put({type:SET_PRODUCT_LIST,data1})
 }
 export default productSaga;
