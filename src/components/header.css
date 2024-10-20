@@ -4,3 +4,15 @@ h1.logo {
   padding: 12px;
   font-family: fangsong;
 }
+
+.search-box {
+  float: left;
+  width: 87%;
+  padding: 30px;
+}
+
+.search-box input {
+  width: 60%;
+  height: 30px;
+  
+}

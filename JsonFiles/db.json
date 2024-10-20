@@ -3,37 +3,107 @@
     {
       "id": 1,
       "name": "Product A",
-      "price": 10.99,
+      "price": 3197.08,
       "category": "Electronics",
       "image": "/Images/1.jpg"
     },
     {
       "id": 2,
       "name": "Product B",
-      "price": 15.49,
+      "price": 4519.48,
       "category": "Books",
       "image": "/Images/2.jpg"
     },
     {
       "id": 3,
       "name": "Product C",
-      "price": 8.75,
+      "price": 2555,
       "category": "Electronics",
       "image": "/Images/3.jpg"
     },
     {
       "id": 4,
       "name": "Product D",
-      "price": 12.99,
+      "price": 3777.08,
       "category": "Books",
       "image": "/Images/4.jpg"
     },
     {
       "id": 5,
       "name": "Product E",
-      "price": 6.89,
+      "price": 2006.88,
       "category": "Electronics",
       "image": "/Images/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Product F",
+      "price": 5837.08,
+      "category": "Clothing",
+      "image": "/Images/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Product G",
+      "price": 3650,
+      "category": "Home Goods",
+      "image": "/Images/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Product H",
+      "price": 2627.08,
+      "category": "Toys",
+      "image": "/Images/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Product I",
+      "price": 7577.08,
+      "category": "Beauty",
+      "image": "/Images/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Product J",
+      "price": 4657.08,
+      "category": "Kitchen",
+      "image": "/Images/6.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Product K",
+      "price": 3197.08,
+      "category": "Electronics",
+      "image": "/Images/5.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Product L",
+      "price": 5392.48,
+      "category": "Books",
+      "image": "/Images/4.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Product M",
+      "price": 2265,
+      "category": "Electronics",
+      "image": "/Images/3.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Product N",
+      "price": 4377.08,
+      "category": "Books",
+      "image": "/Images/2.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Product O",
+      "price": 2888.88,
+      "category": "Electronics",
+      "image": "/Images/1.jpg"
     }
   ]
 }
